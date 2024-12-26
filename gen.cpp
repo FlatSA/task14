@@ -9,6 +9,7 @@ enum Cases {
   VERT_10, // 15 hours
   VERT_14, // 5 min
   VERT_16, // 2 sec was already checked in VERT_14
+  VERT_4, // probably a lot?
 };
 
 size_t graph_size = 28;
@@ -194,6 +195,9 @@ void generate(size_t size, Cases case_, const std::string& file) {
       break;
     case Cases::VERT_16:
       cycles = {{0, 2, 4, 6}, {1, 3, 5, 7}, {10, 12, 14, 16}, {11, 13, 15, 17}};
+      break;
+    case Cases::VERT_4:
+      cycles = {{0, 3, 6, 9}};
       break;
     default:
       cycles = {{0}};
