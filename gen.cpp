@@ -127,6 +127,11 @@ std::string cycles_to_string(const std::vector<Cycle>& cycles) {
   return res;
 }
 
+int64_t canonical_graph(const std::vector<Cycle>& cycles) {
+  //todo
+  return 0;
+}
+
 Cycle& get_target_cycle(std::vector<Cycle>& cycles) {
   int target = -1;
   for (int iter = 0; iter < cycles.size(); ++iter) {
