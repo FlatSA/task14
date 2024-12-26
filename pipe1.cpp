@@ -173,9 +173,5 @@ void Solve(size_t size, size_t cases, size_t type, const std::string& input_file
 
 int main() {
   Solve(24, 385874173, 1, "graphs_24.csv", "status_24.txt");
-  /*std::string cycles = "0,2,4,6;1,3,5,7;8,10,12,14;9,11,13,15;16,18,20,22;17,19,21,23";*/
-  /*Solver solver(24);*/
-  /*std::cout << solver.solve(cycles) << '\n';*/
-
   return 0;
 }
