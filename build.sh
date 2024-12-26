@@ -1,3 +1,3 @@
 #!/bin/bash
 
-clang++ -I/usr/local/include/highs/ -L/usr/local/lib/libhighs.so -std=c++20 -o pipe pipe1.cpp
+clang++ -I/usr/include/highs -L/usr/lib/libhighs.so.1.7.2 -std=c++20 -lhighs -o pipe pipe1.cpp
