@@ -30,7 +30,7 @@ public:
   }
 
   bool full() const {
-    return verts.size() == 4;
+    return verts.size() == verts.size();
   }
 
   size_t size() const {
@@ -86,6 +86,7 @@ public:
 
 private:
   size_t graph_size;
+  size_t verts_size = 4;
   std::vector<int> verts;
 };
 
